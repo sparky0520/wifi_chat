@@ -34,3 +34,7 @@ chat_history.txt
 
 # Assignment PDF
 Qt_Intern_Assignment.pdf
+
+# Allow release bundle (override binary ignores)
+!build-release/
+!build-release/**

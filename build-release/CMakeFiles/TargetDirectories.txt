@@ -1,0 +1,5 @@
+C:/Users/sparky/wifi_chat/build-release/CMakeFiles/LANChat.dir
+C:/Users/sparky/wifi_chat/build-release/CMakeFiles/edit_cache.dir
+C:/Users/sparky/wifi_chat/build-release/CMakeFiles/rebuild_cache.dir
+C:/Users/sparky/wifi_chat/build-release/CMakeFiles/LANChat_autogen_timestamp_deps.dir
+C:/Users/sparky/wifi_chat/build-release/CMakeFiles/LANChat_autogen.dir

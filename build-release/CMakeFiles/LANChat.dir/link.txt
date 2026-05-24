@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\LANChat.dir/objects.a
+D:\Qt\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\LANChat.dir/objects.a @CMakeFiles\LANChat.dir\objects1.rsp
+D:\Qt\Tools\mingw1310_64\bin\c++.exe -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\LANChat.dir/objects.a -Wl,--no-whole-archive -o LANChat.exe -Wl,--out-implib,libLANChat.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\LANChat.dir\linkLibs.rsp
