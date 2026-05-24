@@ -3,16 +3,16 @@
 #include <QCoreApplication>
 #include <QDateTime>
 #include <QFile>
-#include <QFileDialog>
 #include <QHBoxLayout>
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QLabel>
 #include <QMessageBox>
 #include <QNetworkInterface>
+#include <QSignalBlocker>
 #include <QStatusBar>
-#include <QStandardPaths>
 #include <QVBoxLayout>
+#include <algorithm>
 
 namespace
 {
@@ -362,9 +362,22 @@ void MainWindow::updateUsersList()
                                  ? m_usersList->currentItem()->data(Qt::UserRole).toString()
                                  : QString();
 
+    QSignalBlocker blocker(m_usersList);
     m_usersList->clear();
 
-    for (const PeerInfo &peer : m_peersById)
+    QList<PeerInfo> peers = m_peersById.values();
+    std::sort(peers.begin(), peers.end(), [](const PeerInfo &a, const PeerInfo &b) {
+        const QString nameA = a.name.toLower();
+        const QString nameB = b.name.toLower();
+        if (nameA == nameB)
+        {
+            return a.id < b.id;
+        }
+        return nameA < nameB;
+    });
+
+    QListWidgetItem *selectedItem = nullptr;
+    for (const PeerInfo &peer : peers)
     {
         const QString label = QString("%1 (%2)").arg(peer.name, peer.address.toString());
         auto *item = new QListWidgetItem(label);
@@ -373,8 +386,13 @@ void MainWindow::updateUsersList()
 
         if (!selectedId.isEmpty() && peer.id == selectedId)
         {
-            item->setSelected(true);
+            selectedItem = item;
         }
+    }
+
+    if (selectedItem)
+    {
+        m_usersList->setCurrentItem(selectedItem);
     }
 
     onUserSelectionChanged();

@@ -483,13 +483,6 @@ CMakeFiles/LANChat.dir/src/MainWindow.cpp.obj: \
  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h \
  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
- D:/Qt/6.11.1/mingw_64/include/QtWidgets/QFileDialog \
- D:/Qt/6.11.1/mingw_64/include/QtWidgets/qfiledialog.h \
- D:/Qt/6.11.1/mingw_64/include/QtCore/qdir.h \
- D:/Qt/6.11.1/mingw_64/include/QtCore/qdirlisting.h \
- D:/Qt/6.11.1/mingw_64/include/QtCore/qfileinfo.h \
- D:/Qt/6.11.1/mingw_64/include/QtCore/qtimezone.h \
- D:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/QHBoxLayout \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qlayout.h \
@@ -508,11 +501,11 @@ CMakeFiles/LANChat.dir/src/MainWindow.cpp.obj: \
  D:/Qt/6.11.1/mingw_64/include/QtGui/qpicture.h \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/QMessageBox \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qmessagebox.h \
+ D:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
  D:/Qt/6.11.1/mingw_64/include/QtNetwork/QNetworkInterface \
  D:/Qt/6.11.1/mingw_64/include/QtNetwork/qnetworkinterface.h \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/QSignalBlocker \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/QStatusBar \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qstatusbar.h \
- D:/Qt/6.11.1/mingw_64/include/QtCore/QStandardPaths \
- D:/Qt/6.11.1/mingw_64/include/QtCore/qstandardpaths.h \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/QVBoxLayout
