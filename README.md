@@ -15,7 +15,7 @@ A basic Qt 6 peer-to-peer chat app for users on the same WiFi network. Discovery
    cmake --build build
 
 ## Run
-- Start two instances on the same WiFi network.
+- Start two instances on the same WiFi network. (LANChat.exe from build-release folder)
 - Enter a name and keep visibility enabled.
 - Select a nearby user and send messages.
 
